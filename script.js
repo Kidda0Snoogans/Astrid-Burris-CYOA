@@ -6,21 +6,41 @@
 
 
 
+// Get the door
 
+let StoryO=document.querySelector(".StoryO");
+let Door=document.querySelector(".Door");
+let DoorC=document.querySelector(".DoorC");
+    Door.addEventListener('click', function(){
+        DoorC.style.display="block";
+        StoryO.style.display="none";
+    
+})
 
-// When you're ready to make event handlers, uncomment the code below. 
-//  - Then fill in the blanks with the correct variables.
+// Escape with your family
 
+let Escape=document.querySelector(".Escape");
+let EscapeC=document.querySelector(".EscapeC");
+    Escape.addEventListener('click', function(){
+    EscapeC.style.display="block";
+    StoryO.style.display="none";
+    Door.style.display="none";
+})
 
-// INSERT_VARIABLE.addEventListener('click', function(){
+// Escape through a window
 
-// });
+let Good=document.querySelector(".Good");
+let Window=document.querySelector(".Window");
+let DoorChoices=document.querySelector(".DoorChoices");
+    Window.addEventListener('click', function(){
+    Good.style.display="block";
+    DoorChoices.style.display="none";
+})
 
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
-
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
+// Fight the enemies
+let Bad=document.querySelector(".Bad");
+let Fight=document.querySelector(".Fight");
+    Fight.addEventListener('click', function(){
+    Bad.style.display="block";
+    DoorChoices.style.display="none";
+})
